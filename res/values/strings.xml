@@ -4,5 +4,8 @@
     <string name="app_name">routeTracker</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="startString">Start</string>
+    <string name="stopString">Stop</string>
+    <string name="centerString">Center</string>
 
 </resources>
