@@ -44,6 +44,7 @@ public class startPosFrag extends PreferenceFragment {
 				}
 				else{
 					Toast.makeText(getActivity(), "Error writing to file.", Toast.LENGTH_SHORT).show();
+					return false;
 				}
 				
 				return true;
@@ -71,7 +72,15 @@ public class startPosFrag extends PreferenceFragment {
 					return false;
 				}
 				
-				MainActivity.prefs.edit().putFloat("startLng", (float) longitude).commit();
+				if(MainActivity.prefs.edit().putFloat("startLng", (float) longitude).commit()){
+					Toast.makeText(getActivity(), String.format("Longitude set to %f", longitude), Toast.LENGTH_SHORT).show();
+				}
+				else{
+					Toast.makeText(getActivity(), "Error writing to file.", Toast.LENGTH_SHORT).show();
+					return false;
+				}
+				
+				
 				return true;
 			}
 			

@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory android:title = "Map Type">
+        <CheckBoxPreference
+            android:key="nrmlcb_key"
+            android:title="Normal Map"
+            android:summary="The standard map for google maps."
+            android:defaultValue="1" />
+        <CheckBoxPreference
+            android:key="satcb_key"
+            android:title="Satellite Map"
+            android:summary="Map with satellite imagery."
+            android:defaultValue="0" />
+        <CheckBoxPreference
+            android:key="tercb_key"
+            android:title="Terrain Map"
+            android:summary="Map with terrain information."
+            android:defaultValue="0" />
+        <CheckBoxPreference
+            android:key="hybcb_key"
+            android:title="Hybrid Map"
+            android:summary="A mix between satellite and terrain maps."
+            android:defaultValue="0" />  
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>
