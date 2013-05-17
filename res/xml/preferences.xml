@@ -4,5 +4,5 @@
         android:title="Starting Position" />
     <header
         android:fragment="com.myersd.routetracker.layerSelectFrag"
-        android:title="Map Type" />
+        android:title="Default Map Type" />
 </preference-headers>

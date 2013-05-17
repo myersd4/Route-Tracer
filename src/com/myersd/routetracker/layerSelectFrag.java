@@ -1,3 +1,7 @@
+/*layerSelectFrag.java - lets user select default layer for map.
+ * Dan Myers
+ * CSC 494
+ */
 package com.myersd.routetracker;
 
 import android.os.Bundle;

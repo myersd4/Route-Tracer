@@ -4,7 +4,6 @@ import java.util.List ;
 import android.os.Bundle ;
 import android.preference.PreferenceActivity ;
 import android.preference.PreferenceManager ;
-import android.preference.PreferenceActivity.Header ;
 
 public class prefActivity extends PreferenceActivity
 {

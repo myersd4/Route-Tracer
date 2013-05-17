@@ -1,3 +1,8 @@
+/*startPosFrag.java - lets user select the default starting position.
+ * Dan Myers
+ * CSC 494
+ */
+
 package com.myersd.routetracker;
 
 import android.os.Bundle;
@@ -19,7 +24,8 @@ public class startPosFrag extends PreferenceFragment {
 		super.onCreate(savedInstanceState);
 		addPreferencesFromResource(R.xml.startpospref);
 		
-		
+		/*Uses preference changed listeners to validate input before commit it to the defaut preferences file
+		 */
 		
 		
 		lat = (EditTextPreference)getPreferenceScreen().findPreference("lattxt_key");
